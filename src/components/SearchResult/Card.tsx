@@ -27,7 +27,7 @@ const Card = ({ product }: IProps) => {
           <h3 className="card_price">${product?.price}</h3>
           <div className="card_ratings">
             {[...Array(Math.floor(product.rating.rate) + 1)].map((star) => (
-              <StarIcon className="star_icon" />
+              <StarIcon className="star_icon"  />
             ))}
             <span className="rating_count">({product.rating.count})</span>
           </div>

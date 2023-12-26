@@ -15,7 +15,7 @@ const SearchBox = ({ productsData }: IProps) => {
         <h3 className="title">Latest Trends</h3>
         <div className="box__container">
           {productsData
-            ?.map((product) => <LatestProductCard product={product} />)
+            ?.map((product) => <LatestProductCard product={product} key={product?.id} />)
             .slice(0, 4)}
         </div>
 
@@ -24,7 +24,7 @@ const SearchBox = ({ productsData }: IProps) => {
           <div className="suggestion_lists">
             <ul>
               {linksList.map((link) => (
-                <li>
+                <li key={link.id}>
                   <Link
                     to={{
                       pathname: "/search",
