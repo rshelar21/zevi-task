@@ -1,0 +1,31 @@
+.home_body {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/public/assets/bg-cover.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  flex-direction: column;
+  position: relative;
+}
+
+.home__container {
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 15px;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 80px;
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .home_body {
+    padding: 0 10px;
+  }
+}/*# sourceMappingURL=Home.css.map */

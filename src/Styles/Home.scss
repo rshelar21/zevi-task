@@ -1,0 +1,33 @@
+@import "./variables/variable.scss";
+
+.home_body {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('/public/assets/bg-cover.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    font-family: $font;
+    flex-direction: column;
+    position: relative;
+}
+.home__container{
+    width: 100%;
+    max-width: 600px;
+    background-color: $white;
+    padding: 10px 15px;
+    border-radius: 15px;
+    height: fit-content;
+    margin-top: 80px;
+    position: relative;
+}
+@media (max-width: $breakpoint-laptop) {
+  .home_body { 
+    padding: 0 10px;
+  }
+}
+
+

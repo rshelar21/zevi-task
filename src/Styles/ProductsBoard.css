@@ -1,0 +1,24 @@
+.board__body {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding-bottom: 20px;
+  overflow-y: scroll;
+  max-height: 100vh;
+  padding-bottom: 25vh;
+}
+.board__body::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 1440px) {
+  .board__body {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 1024px) {
+  .board__body {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}/*# sourceMappingURL=ProductsBoard.css.map */

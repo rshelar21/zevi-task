@@ -1,0 +1,71 @@
+.box__body {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  width: 100%;
+  max-width: 935px;
+  position: relative;
+  margin-top: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(33, 33, 33);
+  font-family: "Poppins", sans-serif;
+}
+
+.box__container {
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 25px;
+  padding: 15px 0;
+}
+
+.suggestion_lists {
+  padding-top: 10px;
+}
+.suggestion_lists ul {
+  list-style: none;
+}
+.suggestion_lists li {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(33, 33, 33);
+  letter-spacing: 1px;
+  cursor: pointer;
+  padding: 2px 0;
+}
+
+.pop_container {
+  padding-top: 10px;
+}
+
+.searchLinks {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(33, 33, 33);
+  letter-spacing: 1px;
+  cursor: pointer;
+  padding: 2px 0;
+}
+
+@media (max-width: 1024px) {
+  .box__container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .box__container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 425px) {
+  .box__container {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=SearchBox.css.map */

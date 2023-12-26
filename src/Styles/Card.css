@@ -1,0 +1,71 @@
+.card_body {
+  width: 100%;
+  position: relative;
+}
+.card_body img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.card_body:hover .card_view {
+  display: block;
+}
+
+.card_title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(33, 33, 33);
+}
+
+.card_price {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #4e4bfd;
+}
+
+.star_icon {
+  color: #f5c518;
+  width: 15px;
+  height: 15px;
+}
+
+.rating_count {
+  color: gray;
+  font-size: 12px;
+}
+
+.card_ratings {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.heart-icon {
+  z-index: 20;
+  position: absolute;
+  right: 10px;
+  color: white;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.heart-red {
+  color: red;
+}
+
+.card_view {
+  position: absolute;
+  width: 100%;
+  background-color: #6599f9;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.7;
+  top: 210px;
+  display: none;
+}/*# sourceMappingURL=Card.css.map */

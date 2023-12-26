@@ -1,0 +1,75 @@
+@import "./variables/variable.scss";
+
+
+.box__body{
+    background-color: $white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    padding: 30px;
+    width: 100%;
+    max-width: 935px;
+    position: relative;
+    margin-top: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(33, 33, 33);
+    font-family: $font;
+}
+.box__container{
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 25px;
+    padding: 15px 0;
+}
+
+.suggestion_lists {
+    padding-top: 10px;
+    ul {
+        list-style: none;
+    }
+    li {
+        font-size: 14px;
+        font-weight: 500;
+        color: rgb(33, 33, 33);
+        letter-spacing: 1px;
+        cursor: pointer;
+        padding: 2px 0;
+    }
+}
+.pop_container{
+    padding-top: 10px;
+}
+.searchLinks {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(33, 33, 33);
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding: 2px 0;
+}
+
+
+
+@media (max-width: $breakpoint-laptop) {
+    .box__container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .box__container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: $breakpoint-mobile-L) {
+    .box__container{
+        grid-template-columns: 1fr;
+    }
+}

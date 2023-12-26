@@ -1,0 +1,22 @@
+$red : red;
+$white : #fff;
+$black : rgb(33, 33, 33);
+$yellow : #f5c518;
+$purple : #4e4bfd;
+$blue : #6599f9;
+
+// fonts
+$font : 'Poppins', sans-serif;
+
+@mixin star_icon {
+    color : $yellow;
+    width: 15px;
+    height: 15px;
+}
+
+// breakpoints
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+$breakpoint-mobile-L: 425px;
+$breakpoint-laptop-L : 1440px;
+
