@@ -12,7 +12,7 @@ const LatestProductCard = ({ product }: IProps) => {
       <Link to="/search" className="product_link">
         <div className="product_card">
           <img src={product?.image} alt="cloth-img" />
-          <p className="product_title">{product?.title}</p>
+          <p className="product_title">{product?.title?.slice(0, 25)}</p>
         </div>
       </Link>
     </>
