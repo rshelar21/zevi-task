@@ -16,15 +16,20 @@ const Card = ({ product }: IProps) => {
       <div className="card_body">
         <div className="heart-icon" onClick={() => setIsLiked(!isLiked)}>
           {!isLiked ? (
-            <HeartOutline className="" />
+            <HeartOutline className="bg-white" />
           ) : (
-            <HeartIcon className="heart-red" />
+            <HeartIcon className="heart-red bg-white" />
           )}
         </div>
         <img src={product?.image} alt="" className="" />
         <div className="card_details">
-          <h3 className="card_title">{product?.title}</h3>
-          <h3 className="card_price">${product?.price}</h3>
+          <h3 className="card_title">{product?.title?.slice(0,26)}</h3>
+          <h3 className="card_price">
+           <span className="original__price">
+            ${product?.price + 200}</span>
+            {" "}  
+            ${product?.price}
+          </h3>
           <div className="card_ratings">
             {[...Array(Math.floor(product.rating.rate) + 1)].map((star) => (
               <StarIcon className="star_icon"  />

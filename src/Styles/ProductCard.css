@@ -12,8 +12,8 @@
 
 .product_title {
   font-size: 14px;
-  font-weight: 500;
-  color: gray;
+  font-weight: 300;
+  color: rgb(33, 33, 33);
   font-family: "Poppins", sans-serif;
   letter-spacing: 1px;
 }

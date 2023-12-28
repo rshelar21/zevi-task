@@ -22,6 +22,10 @@ const Home = () => {
   return (
     <>
       <div className="home_body">
+
+        <div className="logo-body">
+          <img src="/assets/logo-zevi.webp" className="logo-company" alt="" />
+        </div>
         <div
           className="home__container"
           onClick={() => setShowSearchBox(!showSearchBox)}

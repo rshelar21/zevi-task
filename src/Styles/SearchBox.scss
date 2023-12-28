@@ -3,7 +3,7 @@
 
 .box__body{
     background-color: $white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
     padding: 30px;
     width: 100%;
     max-width: 935px;
@@ -15,9 +15,10 @@
 
 .title {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     color: rgb(33, 33, 33);
     font-family: $font;
+    // color  : black;
 }
 .box__container{
     width: 100%;
@@ -39,19 +40,22 @@
         color: rgb(33, 33, 33);
         letter-spacing: 1px;
         cursor: pointer;
-        padding: 2px 0;
+        padding: 4px 0;
     }
 }
 .pop_container{
     padding-top: 10px;
 }
 .searchLinks {
-    font-size: 14px;
-    font-weight: 500;
-    color: rgb(33, 33, 33);
+    font-size: 15px;
+    font-weight: 400;
+    // color: rgb(33, 33, 33);
     letter-spacing: 1px;
     cursor: pointer;
-    padding: 2px 0;
+    // padding: 4px 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    color : black
 }
 
 

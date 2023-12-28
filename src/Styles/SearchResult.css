@@ -7,17 +7,31 @@
   overflow: hidden;
 }
 
+.header__body {
+  display: flex;
+  align-items: center;
+}
+
 .search__container {
   width: 100%;
   max-width: 600px;
-  padding: 5px 15px;
+  padding: 4px 15px;
   border-radius: 15px;
   position: relative;
-  border: 1px solid black;
+  border: 2px solid #bababa;
   margin: 0 auto;
   margin-top: 20px;
   height: -moz-fit-content;
   height: fit-content;
+}
+
+.logo__body {
+  padding-right: 30px;
+  padding-top: 20px;
+}
+
+.logo-company {
+  width: 5rem;
 }
 
 .result_container {

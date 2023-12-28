@@ -12,20 +12,20 @@
 .input {
     background-color: $white;
     outline: none;
-    padding: 10px ;
+    padding: 12px ;
     width: 100%;
     border-radius: 20px;
     border: none;
     color: gray; 
     font-family: inherit;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 400;
     height: fit-content;
 }
 
 .input::placeholder {
     color: gray;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 400;
     letter-spacing: 1px;
     font-family: inherit;

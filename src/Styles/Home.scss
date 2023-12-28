@@ -3,7 +3,7 @@
 .home_body {
     width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('/public/assets/bg-cover.jpg');
+    background-image: linear-gradient(rgba(235, 235, 250, 0.4), rgba(235, 235, 250, 0.4)), url('/public/assets/bg-cover.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,10 +13,11 @@
     font-family: $font;
     flex-direction: column;
     position: relative;
+    padding-bottom: 30px;
 }
 .home__container{
     width: 100%;
-    max-width: 600px;
+    max-width: 850px;
     background-color: $white;
     padding: 10px 15px;
     border-radius: 15px;
@@ -28,6 +29,19 @@
   .home_body { 
     padding: 0 10px;
   }
+}
+
+.logo-body {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+    padding-right: 20px;
+  padding-top: 20px;
+
+}
+.logo-company {
+  width:  5rem;
+
 }
 
 

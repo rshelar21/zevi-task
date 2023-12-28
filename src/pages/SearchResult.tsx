@@ -33,7 +33,7 @@ const SearchResult = () => {
         (product: IProducts) => product.category === searchParams.get("q")
       );
       setFilterdList(data);
-    }else{
+    } else {
       setFilterdList(res?.data);
     }
   };
@@ -110,12 +110,17 @@ const SearchResult = () => {
   return (
     <>
       <div className="result__body">
-        <div className="search__container">
-          <SearchField
-            setSearchQuery={setSearchQuery}
-            searchQuery={searchQuery}
-            handleChangeInput={handleChangeInput}
-          />
+        <div className="header__body">
+          <div className="search__container">
+            <SearchField
+              setSearchQuery={setSearchQuery}
+              searchQuery={searchQuery}
+              handleChangeInput={handleChangeInput}
+            />
+          </div>
+          <div className="logo__body">
+            <img src="/assets/logo-zevi.webp" className="logo-company" alt="" />
+          </div>
         </div>
 
         <div className="result_container">
